@@ -1,0 +1,14 @@
+database mess
+
+CREATE TABLE `tbl_board` (
+  `bid` int NOT NULL AUTO_INCREMENT,
+  `cate_cd` varchar(20) DEFAULT NULL,
+  `title` varchar(200) NOT NULL,
+  `content` text NOT NULL,
+  `tag` varchar(1000) DEFAULT NULL,
+  `view_cnt` int NOT NULL DEFAULT '0',
+  `reg_id` varchar(45) NOT NULL,
+  `reg_dt` date NOT NULL,
+  `edit_dt` date NOT NULL,
+  PRIMARY KEY (`bid`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
